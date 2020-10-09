@@ -1,0 +1,60 @@
+
+[theme]
+name = "solarized-dark"
+[theme.overrides]
+idle_bg = "#123456"
+idle_fg = "#ffffff"
+
+[icons]
+name = "awesome5"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}% {frequency} GHz"
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "disk_space"
+path = "/home/alok/"
+alias = "HOME"
+info_type = "available"
+unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+#[[block]]
+#block = "net"
+#device = "enp0s31f6"
+
+#[[block]]
+#block = "toggle"
+#text = "SonicWALL VPN"
+#command_state = ""
+#command_on = "startctui"
+#command_off = "pkill -9 startctui"
+#interval = 5
+
+[[block]]
+block = "sound"
+
+#[[block]]
+#block = "bluetooth"
+#mac = "20:DF:B9:56:66:E6"
+#label = "Den Speaker"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"

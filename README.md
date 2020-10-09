@@ -1,2 +1,2 @@
 # config
-Personal customized configuration for Arch Linux
+Application configurations.
