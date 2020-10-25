@@ -1,0 +1,8 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[character]
+success_symbol = "[>>](bold green) "
+error_symbol = "[>>](bold red) "
+
+format = "$directory$git_branch$git_commit$git_state$git_status"
